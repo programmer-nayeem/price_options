@@ -1,10 +1,13 @@
 import './App.css'
+import DaisyNavbar from './assets/Components/DaisyNavbar/DaisyNavbar'
+import Navbar from './assets/Components/Navbar/Navbar'
 
 function App() {
 
   return (
     <>
-        <h1>Vite + React</h1>
+        <Navbar></Navbar>
+        {/* <DaisyNavbar></DaisyNavbar> */}
         
     </>
   )
