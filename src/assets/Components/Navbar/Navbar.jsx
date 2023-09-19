@@ -15,13 +15,13 @@ const Navbar = () => {
     ];
 
     return (
-        <nav>
+        <nav className="px-6 md:px-12 lg:px-12 py-4 bg-base-200 shadow-sm">
             <div className="md:hidden" onClick={() => setOpen(!open)}>
                 {
                     open === true ? <HiX className="text-2xl"></HiX> : <HiOutlineMenuAlt1 className="text-2xl"></HiOutlineMenuAlt1>
                 }
             </div>
-            <ul className="md:flex gap-8">
+            <ul className={`md:flex gap-8 absolute md:static px-4 duration-1000 bg-base-200 ${open ? 'top-[50px]' : '-top-60'}`}>
                 {
                     routes.map(route => <Link  key={route.id} route={route}></Link>)
                 }
